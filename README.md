@@ -2,7 +2,7 @@
 
 This proyect use Openrouter, using openai package to connect to Model o4 mini.
 
-## To view Backend: [React GPT!](https://github.com/Attonitus/nest-gpt)
+## To view Backend: [Nest GPT!](https://github.com/Attonitus/nest-gpt)
 
 1. Clone project
 
