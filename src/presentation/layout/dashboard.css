@@ -1,0 +1,76 @@
+.layout {
+    display: grid;
+    grid-template-areas:
+        "nav page"
+        "nav page";
+    grid-template-columns: 175px 1fr;
+    block-size: 100vh;
+}
+
+.nav {
+    grid-area: nav;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--gray);
+}
+
+.title {
+    margin: 0;
+}
+
+.text-welcome {
+    padding-block-end: .5rem;
+    border-block-end: 2px solid gray;
+}
+
+.pages {
+    grid-area: page;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--gray);
+
+}
+
+.active {
+    color: #758cf3;
+}
+
+.icon {
+    inline-size: 1.5rem;
+}
+
+.description {
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 12rem;
+}
+
+@media screen and (min-width: 768px) {
+    .layout {
+        grid-template-columns: 300px 1fr;
+        column-gap: 2rem;
+    }
+
+    .description {
+        display: block;
+        font-size: .75rem;
+    }
+}

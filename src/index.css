@@ -1,0 +1,34 @@
+@import './presentation/layout/dashboard.css';
+@import './presentation/pages/orthography/orthograpypage.css';
+@import './presentation/components/chat-bubbles/messages.css';
+
+:root {
+  --gray: #191919;
+  --white: white;
+  --black: #0f0f0f;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Roboto", serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  inline-size: .25rem;
+  block-size: .25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-track {
+  background: #3c3c3c;
+}
